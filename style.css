@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+    --link-color: #0db596;
+    --green: #18bc9c;
+    --blue: #4daded;
+    --yellow: #f39c13;
+    --text-color: #9a999e;
+    --dark-grey: #3a3942;
+    --medium-grey: #95a5a6;
+    --light-grey: #eeeeee;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #f6f8fa;
+    color: var(--dark-grey);
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.search-container .search-card {
+    width: 100%;
+    max-width: 850px;
+    background: var(--white);
+    border-radius: 5px;
+    padding: 20px 28px;
+    box-shadow: 0 0px 1rem rgba(0, 0, 0, 0.1);
+}
+
+.search-card h1 {
+    font-size: calc(28 / 16 * 1rem);
+    padding-bottom: 5px;
+}
+
+.search-card p {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: calc(18 / 16 * 1rem);
+    padding-bottom: 15px;
+}
+
+.search-card .wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.search-card .wrapper input {
+    padding: 6px 8px;
+    font-size: 0.9rem;
+    border-radius: 0 4px 4px 0;
+    border: 2px solid var(--light-grey);
+    width: 100%;
+    max-width: 80%;
+    font-weight: 500;
+    color: var(--text-color);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-card .wrapper input::placeholder {
+    color: var(--text-color);
+}
+
+.search-card .wrapper .github-symbol {
+    background: var(--light-grey);
+    color: var(--text-color);
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    font-size: 0.9rem;
+}
+
+.search-card .wrapper .github-symbol i {
+    margin-right: 7px;
+}
+
+footer {
+    padding: 20px 0 30px 0;
+    text-align: center;
+    color: var(--medium-grey)
+  }
+
+  footer a,
+  footer a:visited {
+    color: var(--dark-grey);
+    transition: all 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #3a3942cb;
+  }
