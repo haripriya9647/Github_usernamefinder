@@ -30,7 +30,8 @@ class UI{
             <h3 class="page-heading">Latest Repos</h3>
             <div id="repos">
 
-                </div>`;
+            </div>`;
+        
         if (user.company == null) {
             document.querySelector(".company").innerHTML = '<li class="list-group-item company"><span class="thick">Company:</span>   &nbsp; <span class="yellow">No Details Provided</span></li>';
         }
@@ -47,6 +48,7 @@ class UI{
               '<li class="list-group-item member"><span class="thick">Member Since:</span>	&nbsp; <span class="yellow">No Details Provided</span></li>';
           } 
     }
+
     showRepos(repos) {
         let output = "";
 
@@ -64,7 +66,8 @@ class UI{
                         <span class="badge badge-success">Forks: ${repo.forks_count}</span>
                     </div>
                 </div>
-            </div>`;
+            </div>
+            `;
         });
         document.getElementById("repos").innerHTML = output;
     }
