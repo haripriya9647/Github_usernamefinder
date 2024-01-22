@@ -19,8 +19,8 @@ class UI{
                             <span class="badge-info">Following: ${user.following}</span>
                         </div>
                         <ul class="list-group">
-                            <li class="list-group-item company"><span class="thick">Company:</span>${user.company}</li>
-                            <li class="list-group-item blog"><span class="thick">Website/blog:</span><a href="${user.blog}" target="_blank">$</a></li>
+                            <li class="list-group-item company"><span class="thick">Company: </span>${user.company}</li>
+                            <li class="list-group-item blog"><span class="thick">Website/blog: </span><a href="${user.blog}" target="_blank">${user.blog}</a></li>
                             <li class="list-group-item location"><span class="thick">Location: </span>${user.location}</li>
                             <li class="list-group-item member"><span class="thick">Member Since: </span>${convertTime(user.created_at)}</li>
                         </ul>
@@ -43,7 +43,7 @@ class UI{
             document.querySelector(".location").innerHTML =
               '<li class="list-group-item location"><span class="thick">Location:</span>	&nbsp; <span class="yellow">No Details Provided</span></li>';
           }
-          if (user.member-since == undefined || user.member-since == "") {
+          if (user.created_at == undefined || user.created_at == "") {
             document.querySelector(".member-since").innerHTML =
               '<li class="list-group-item member"><span class="thick">Member Since:</span>	&nbsp; <span class="yellow">No Details Provided</span></li>';
           } 

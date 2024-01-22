@@ -3,7 +3,7 @@ class Github {
         this.client_id = "b70d119fd23c194b1e05";
         this.client_secret = "2c4957dff6ec6c71920ad1f99c532316b1c32cef";
         this.repos_count = 5;
-        this.repos_sort = "created: asc";
+        this.repos_sort = "asc";
     }
     
     async getUser(user) {
